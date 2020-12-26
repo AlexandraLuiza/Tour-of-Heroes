@@ -2,6 +2,11 @@
   <h2>Here details</h2>
   <h2>{{hero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
+  <div><span>power stats: </span>
+    <div *ngFor="let powerStat of hero.powerStats | keyvalue">
+      {{powerStat.key}}:{{powerStat.value}}
+    </div>
+  </div>
   <div>
     <label>name:
       <input [(ngModel)]="hero.name" placeholder="name" />
