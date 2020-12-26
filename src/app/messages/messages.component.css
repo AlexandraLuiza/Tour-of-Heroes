@@ -18,3 +18,9 @@ h2 {
   button:hover {
     background-color: #cfd8dc;
   }
+
+  .message-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
